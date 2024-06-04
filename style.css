@@ -1,0 +1,116 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+svg{
+    width: 50px;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#buscador{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    min-height: 48px;
+    max-width: 584px;
+    width: 538px;
+    padding: 0 8px 0 0; /* 0 arriba, 8 derecha, 0 abajo, 0 izquierda */
+    margin: 0 auto;
+}
+
+#buscador input{
+    border: none;
+    outline: none;
+    width: 350px;
+    margin-top: 0%;
+}
+
+#buscador .icono-buscador{
+    margin: 5px;
+    width: 40px;
+}
+
+.icono-cuadro{
+    height: 100px;
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+
+footer >div >ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+a[target]{
+    color:#202124;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button{
+    background-color: #f8f9fb;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #786f6f;
+}
+
+#botones{
+    text-align: center;
+    margin-top: 20px;
+    /*display: flex;
+    justify-content: center;
+    margin-right: 4px;*/
+}
+
+#botones button{
+    /*margin: 0 10px;*/
+    border: 1px solid  #dfe1e5;
+    border-radius: 4px;    
+}
+
+.space{
+    width: 4px;
+    height: auto;
+    display: inline-block;
+}
+
+img{
+    width: 272px;
+    align-content: center;
+}
+
+
+/* Modelo de caja: box model
+tiene 4 propiedades:
+- margin: margen    
+- border: borde
+- padding: relleno
+- content: contenido
+
+/* una clase se seleciona con un punto . y el id con un #
