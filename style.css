@@ -2,21 +2,29 @@
     font-family: 'Roboto', sans-serif;
 }
 
-svg{
-    width: 50px;
-}
-
-li{
-    display: inline-block;
-    margin: 10px;
-}
-
 header ul{
     list-style-type: none;
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 10px 20px;
 }
+
+header ul li{
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #5f6368;
+}
+
+header ul li img.perfil{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
 
 main{
     height: 70vh;
@@ -25,85 +33,102 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+#logocentro{
+    width: 272px;
+    margin-bottom: 20px;
+}
+
 #buscador{
     display: flex;
-    justify-content: center;
+    align-items: center;
     border: 1px solid #dfe1e5;
     border-radius: 50px;
-    min-height: 48px;
-    max-width: 584px;
-    width: 538px;
-    padding: 0 8px 0 0; /* 0 arriba, 8 derecha, 0 abajo, 0 izquierda */
-    margin: 0 auto;
+    height: 44px;
+    width: 584px;
+    padding: 0 10px; /* 0 arriba, 0 derecha, 0 abajo, 0 izquierda */
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 #buscador input{
     border: none;
     outline: none;
-    width: 350px;
-    margin-top: 0%;
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
 }
 
 #buscador .icono-buscador{
-    margin: 5px;
-    width: 40px;
+    width: 24px;
+    height: 24px;
+    color: #9aa0a6;
 }
 
-.icono-cuadro{
-    height: 100px;
+#botones {
+    margin-top: 20px;
+    text-align: center;
 }
 
-footer{
-    background-color: #f2f2f2;
-}
-
-footer >div >ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-a[target]{
-    color:#202124;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-button{
-    background-color: #f8f9fb;
-    border: none;
-    border-radius: 5px;
+#botones button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 0 5px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 14px;
-    color: #786f6f;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-#botones{
+#botones button:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(60, 64, 67, 0.15);
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 20px;
-    /*display: flex;
-    justify-content: center;
-    margin-right: 4px;*/
+    margin: 0;
 }
 
-#botones button{
-    /*margin: 0 10px;*/
-    border: 1px solid  #dfe1e5;
-    border-radius: 4px;    
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.space{
-    width: 4px;
-    height: auto;
-    display: inline-block;
+footer ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-img{
-    width: 272px;
-    align-content: center;
+footer ul li a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
 }
+
+footer ul:first-child {
+    border-bottom: 1px solid #dadce0; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+footer ul:first-child li:first-child {
+    margin-left: 0; 
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
 
 
 /* Modelo de caja: box model
